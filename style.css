@@ -25,7 +25,7 @@
     --text-muted: #a79bbd;
     --font-main: 'Plus Jakarta Sans', sans-serif;
     --font-heading: 'Playfair Display', serif;
-    --font-handwriting: 'Caveat', cursive;
+    --font-handwriting: 'Dancing Script', cursive;
 
     /* Shadow & Effects */
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
@@ -344,10 +344,10 @@ body {
 
 .quote-text {
     font-family: var(--font-handwriting);
-    font-size: 1.45rem;
-    line-height: 1.5;
-    color: #fff;
-    margin-bottom: 8px;
+    font-size: 1.35rem;
+    line-height: 1.65;
+    color: #ffffff;
+    margin-bottom: 10px;
     font-weight: 700;
 }
 
@@ -563,35 +563,60 @@ body {
 
 /* Personality Traits */
 .persona-traits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .trait-box {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: 14px 12px;
+    padding: 16px 16px 14px;
     text-align: left;
+    transition: all 0.3s ease;
+}
+
+.trait-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 94, 126, 0.3);
+    transform: translateY(-2px);
+}
+
+.trait-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
 }
 
 .trait-icon {
-    font-size: 1.5rem;
-    margin-bottom: 6px;
+    font-size: 1.4rem;
+}
+
+.trait-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #ff9ebb;
+    background: rgba(255, 94, 126, 0.12);
+    border: 1px solid rgba(255, 94, 126, 0.25);
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.2px;
 }
 
 .trait-info h4 {
-    font-size: 0.9rem;
+    font-size: 0.96rem;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .trait-info p {
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 /* Hobbies */
@@ -854,7 +879,6 @@ body {
    ========================================================================== */
 @media (max-width: 420px) {
 
-    .persona-traits,
     .hobbies-tags {
         grid-template-columns: 1fr;
     }
