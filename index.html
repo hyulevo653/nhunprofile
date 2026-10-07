@@ -163,7 +163,9 @@
                             </div>
                             <div class="trait-info">
                                 <h4>Kim Ngưu (Taurus)</h4>
-                                <p>Biểu trưng cho sự kiên định, chân thành, thực tế và đáng tin cậy. Là người giàu tình cảm, tinh tế, yêu thích sự bình yên và luôn mang lại cảm giác ấm áp, an tâm cho những người mình thương yêu.</p>
+                                <p>Biểu trưng cho sự kiên định, chân thành, thực tế và đáng tin cậy. Là người giàu tình
+                                    cảm, tinh tế, yêu thích sự bình yên và luôn mang lại cảm giác ấm áp, an tâm cho
+                                    những người mình thương yêu.</p>
                             </div>
                         </div>
                         <div class="trait-box">
@@ -173,7 +175,9 @@
                             </div>
                             <div class="trait-info">
                                 <h4>Số Chủ Đạo 7</h4>
-                                <p>Con số của sự sâu sắc, tri thức và thế giới nội tâm phong phú. Sở hữu trực giác nhạy bén, khả năng tự học và quan sát tuyệt vời, luôn kiên định đi theo con đường riêng và không ngừng phát triển bản thân.</p>
+                                <p>Con số của sự sâu sắc, tri thức và thế giới nội tâm phong phú. Sở hữu trực giác nhạy
+                                    bén, khả năng tự học và quan sát tuyệt vời, luôn kiên định đi theo con đường riêng
+                                    và không ngừng phát triển bản thân.</p>
                             </div>
                         </div>
                     </div>
@@ -248,15 +252,68 @@
 
     </main>
 
+    <!-- SHARE MODAL -->
+    <div id="shareModal" class="modal-backdrop">
+        <div class="modal-card glass-panel share-modal-card">
+            <button class="modal-close-btn" id="closeShareBtn" title="Đóng" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal-title">Chia Sẻ Hồ Sơ</h3>
+            <p class="modal-subtitle">Gửi trang giới thiệu cá nhân của Nhung đến mọi người</p>
+
+            <div class="share-preview-box">
+                <img src="d50d08d391aa11f448bb.jpg" alt="Cấn Hồng Nhung" class="share-preview-avatar">
+                <div class="share-preview-info">
+                    <span class="share-preview-name">Cấn Hồng Nhung</span>
+                </div>
+            </div>
+
+            <div class="share-channels-grid">
+                <a href="#" id="shareFbBtn" class="share-channel-btn fb-channel" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="channel-icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" id="shareMessengerBtn" class="share-channel-btn messenger-channel" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="channel-icon-circle"><i class="fa-brands fa-facebook-messenger"></i></div>
+                    <span>Messenger</span>
+                </a>
+                <a href="#" id="shareTelegramBtn" class="share-channel-btn tele-channel" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="channel-icon-circle"><i class="fa-brands fa-telegram"></i></div>
+                    <span>Telegram</span>
+                </a>
+                <a href="#" id="shareTwitterBtn" class="share-channel-btn x-channel" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="channel-icon-circle"><i class="fa-brands fa-x-twitter"></i></div>
+                    <span>X (Twitter)</span>
+                </a>
+            </div>
+
+            <div class="share-copy-section">
+                <div class="share-url-input-wrap">
+                    <i class="fa-solid fa-link input-icon"></i>
+                    <input type="text" id="shareUrlInput" class="share-url-input"
+                        value="https://nhunnhunprofile.vercel.app/" readonly>
+                </div>
+                <button id="modalCopyBtn" class="share-copy-action-btn">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>Sao chép</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- QR CODE MODAL -->
     <div id="qrModal" class="modal-backdrop">
         <div class="modal-card glass-panel">
-            <button class="modal-close-btn" id="closeQrBtn"><i class="fa-solid fa-xmark"></i></button>
+            <button class="modal-close-btn" id="closeQrBtn" title="Đóng" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
             <h3 class="modal-title">Quét Mã QR Cá Nhân</h3>
             <p class="modal-subtitle">Quét bằng camera điện thoại để mở nhanh trang bio của Nhung</p>
             <div class="qr-box">
                 <img id="qrImage"
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://www.facebook.com/duwasnef?locale=vi_VN"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://nhunnhunprofile.vercel.app/"
                     alt="QR Code">
             </div>
             <span class="qr-handle">@colacold_ • Cấn Hồng Nhung</span>

@@ -836,6 +836,169 @@ body {
     color: var(--accent-coral);
 }
 
+/* Share Modal Styling */
+.share-modal-card {
+    max-width: 400px;
+}
+
+.share-preview-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.share-preview-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-coral);
+    flex-shrink: 0;
+}
+
+.share-preview-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.share-preview-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.share-preview-link {
+    font-size: 0.78rem;
+    color: var(--accent-coral);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.share-channels-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.share-channel-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.share-channel-btn:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.channel-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.fb-channel .channel-icon-circle {
+    background: linear-gradient(135deg, #1877f2, #0d65d9);
+}
+
+.messenger-channel .channel-icon-circle {
+    background: linear-gradient(135deg, #00B2FE, #006AFF);
+}
+
+.tele-channel .channel-icon-circle {
+    background: linear-gradient(135deg, #2AABEE, #229ED9);
+}
+
+.x-channel .channel-icon-circle {
+    background: linear-gradient(135deg, #222226, #000000);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.share-channel-btn:hover .channel-icon-circle {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 94, 126, 0.4);
+}
+
+.share-copy-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 6px 6px 6px 12px;
+}
+
+.share-url-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.input-icon {
+    font-size: 0.85rem;
+    color: var(--accent-coral);
+}
+
+.share-url-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+}
+
+.share-copy-action-btn {
+    background: var(--primary-gradient);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+}
+
+.share-copy-action-btn:hover {
+    box-shadow: var(--shadow-glow);
+    transform: scale(1.03);
+}
+
+.share-copy-action-btn:active {
+    transform: scale(0.96);
+}
+
 /* Lightbox Image */
 .lightbox-backdrop img {
     max-width: 90vw;
